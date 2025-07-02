@@ -5,16 +5,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c05858;
+    
 }
 header {
     width:100%;
     height: 60px;
-    background-color: #4CAF50;
+    background-color:transparent
     color: white;
-    padding: 10px 0;
+    padding: 0px;
     text-align: center;
     top:0;
+    position:sticky;
 }   
 header a{
     text-decoration: none;
@@ -30,5 +31,55 @@ header .container{
     
 }
 .banner-container {
-    margin-top: 10px;
+    margin-top: -2px;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(6,72,105,0.849), rgba(6,72,105,0.849)), url('./bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
+.banner-container .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.left-section
+{
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+}
+.left-section h1{
+    border: solid 2px #fff;
+    color:#fff;
+    font-size: larger;
+
+}
+.left-section p {
+    color: #fff;
+    margin:0px;
+    font-size: 18px;
+    margin-top: 20px;
+    color:rgba(208, 238, 188, 0.849);
+    line-height: 18px;
+}
+.left-section button {
+    padding: 10px 20px;
+    background-color: #b2ca8c;
+    color: #000;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.left-section button:hover {
+    padding: 10px 20px;
+    background-color: #e25a1a;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
