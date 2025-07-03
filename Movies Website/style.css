@@ -45,3 +45,7 @@ header{
     color: black;
     opacity: 0.3;
 }
+.head-right {
+    display: flex;
+  
+}
