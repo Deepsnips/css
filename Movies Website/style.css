@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(77, 88, 109);
+    scroll-behavior: smooth;
+}
+.container{
+    color:aliceblue;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+position:absolute;}
+header{
+    position: relative;
+    top:0;
+    right:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 40px;
+    background-color: rgb(77, 67, 67);
+    background-filter: blur(5px);
+}
