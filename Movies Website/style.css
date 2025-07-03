@@ -49,3 +49,10 @@ header{
     display: flex;
   
 }
+.head-right a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left:25px;;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
