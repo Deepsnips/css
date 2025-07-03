@@ -22,3 +22,8 @@ header{
     background-color: rgb(77, 67, 67);
     background-filter: blur(5px);
 }
+.head-left{
+    display:flex;
+    align-items: center;
+    
+}
