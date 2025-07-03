@@ -78,13 +78,13 @@ position:relative;
 }
 .hero-info{
     z-index:444;
-    position: relative;
+    position: absolute;
     top:80px;
     left:50px;
 
 }
 .hero-info h1{
-    font-size: 60px;
+    font-size: 120px;
     font-weight: 700;
     color: aliceblue;
 }
@@ -92,4 +92,10 @@ position:relative;
     font-size: 20px;
     color: aliceblue;
     margin-top: 10px;
+}
+.hero-info button{
+    background-color: rgb(255, 252, 70);
+    border:2px solid yellow;
+    border-radius: 25px;
+    height:30px;
 }
