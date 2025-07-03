@@ -12,11 +12,12 @@ body{
 position:absolute;}
 header{
     position: relative;
+    width:auto;
     top:0;
     right:0;
     left:0;
     display:flex;
-    align-items: center;
+   
     justify-content: space-between;
     padding:10px 40px;
     background-color: rgb(77, 67, 67);
@@ -24,7 +25,8 @@ header{
 }
 .head-left{
     display:flex;
-    align-items: center;
+    margin-left: 0px;
+    justify-content: center;
 
 }
 .head-left img{
