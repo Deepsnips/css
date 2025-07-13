@@ -37,6 +37,12 @@
                 initial-value: 0deg;
                 inherits: false;
             }
+            @property --color {
+                syntax: "<color>";
+            
+                initial-value: #cf7d7d;
+                inherits: false;
+            }
             .card::after,card::before{
                 
                 content: '';
@@ -75,11 +81,20 @@
       100% { background-position: 0% 50%; }
     }
     body{
-                background: #313030;
+                background:var(--color);
                 height: 100vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                animation:3s color linear infinite;
+            }
+            @keyframes color{
+                0% { --color:rgb(84, 224, 201); }
+      10%{ --color:rgb(178, 196, 130); }
+      25% { --color:rgb(156, 156, 238);}
+      50% { --color:rgb(235, 108, 228); }
+      100% { --color:rgb(224, 165, 77); }
+
             }
         </style>
         
