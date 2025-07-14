@@ -26,3 +26,20 @@ function animateCursor() {
 }
 
 animateCursor();
+
+function createTrail(x, y) {
+  const trail = document.createElement('div');
+  trail.className = 'cursor-trail';
+  trail.style.left = `${x}px`;
+  trail.style.top = `${y}px`;
+  document.body.appendChild(trail);
+
+  setTimeout(() => {
+    trail.remove();
+  }, 500); // Adjust lifespan
+}
+
+setInterval(() => {
+  createTrail(currentX, currentY);
+}, 20); // Add trail every 20ms
+
