@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Neon Cursor</title>
+    <link href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+#title {
+    color: #fff;
+    font-size: 4em;
+}
+
+#neon-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    transition: transform 0.1s, box-shadow 0.1s;
+    transform: translate(-50%, -50%);
+}
+</style>
+
 <body>
-    
+    <div id="container">
+        <div id="title">
+            <h1>NEON<br />CURSOR</h1>
+        </div>
+    </div>
+    <div id="neon-cursor"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>
