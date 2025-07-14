@@ -55,7 +55,13 @@ html {
         </div>
     </div>
     <div id="neon-cursor"></div>
-    <script src="script.js"></script>
+    <script src="script.js">
+        document.addEventListener('mousemove', (e) => {
+    const cursor = document.getElementById('neon-cursor');
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
+    </script>
 </body>
 
 </html>
