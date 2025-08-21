@@ -1,1 +1,1 @@
-animat
+animated
