@@ -1,1 +1,1 @@
-animated bo
+animated border
