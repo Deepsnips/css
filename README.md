@@ -1,1 +1,1 @@
-animated border
+Animated border
